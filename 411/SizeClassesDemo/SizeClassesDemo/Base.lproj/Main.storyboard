@@ -17,17 +17,37 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNI-oP-SrT">
-                                <rect key="frame" x="217" y="225" width="46" height="30"/>
+                                <rect key="frame" x="217" y="430" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="137" y="145" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="297" y="430" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="297" y="430" width="46" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="fNI-oP-SrT" secondAttribute="centerX" id="1Yg-wr-jWB"/>
-                            <constraint firstAttribute="centerY" secondItem="fNI-oP-SrT" secondAttribute="centerY" id="dtu-Ys-bdU"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fNI-oP-SrT" secondAttribute="bottom" constant="20" id="42i-5U-WUr"/>
+                            <constraint firstAttribute="centerY" secondItem="fNI-oP-SrT" secondAttribute="centerY" id="U7g-kg-8iT"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="U7g-kg-8iT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="U7g-kg-8iT"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
